@@ -1,5 +1,20 @@
 public class Lesson {
     public static void main(String[] args) {
+
+        task0(); //lesson 2 Task 0 домашняя работа 2
+        task1(); //variable Task 1 описание переменных
+        task2(); //initializing variables Task 2 инициализация переменнных
+        task3(); //three teachers Task 3 три учителя
+        task4(); //bottle cutting machine Task 4 станок для бутылок
+        task5(); //paint for school Task 5 краска для школы
+        task6(); //Breakfast of the champion Task 6 завтрак чемпиона
+        task7(); //Diet Program Task 7 программа диеты
+        task8(); //Staff motivation Task 8 мотивация персонама
+        System.out.println("___________________________________________________________________");
+    }
+    public static void task0() {
+        System.out.println("__________________________________________________________________");
+        System.out.println(" Домашняя работа 2");
         System.out.println("Новая задача 1, 2, 3, новые переменные");
         var weightDog =8.0;
         //Dog wight = 8.0 кг.//
@@ -101,19 +116,9 @@ public class Lesson {
         //Defference weight of boxers//
         System.out.println(" Разница в весе боксеров вариант 2 "+differenceWeightBoxer2+ " кг.");
     }
-}
-public class Main {
-    public static void main(String[] args) {
-        task1(); //variable Task 1 описание переменных
-        task2(); //initializing variables Task 2 инициализация переменнных
-        task3(); //three teachers Task 3 три учителя
-        task4(); //bottle cutting machine Task 4 станок для бутылок
-        task5(); //paint for school Task 5 краска для школы
-        task6(); //Breakfast of the champion Task 6 завтрак чемпиона
-        task7(); //Diet Program Task 7 программа диеты
-        task8(); //Staff motivation Task 8 мотивация персонама
-    }
     public static void task1() {
+        System.out.println("__________________________________________________________________");
+        System.out.println(" Домашняя работа 3");
         System.out.println(" Задача 1");
         byte a = 127; // variable limit -128 до 127
         System.out.println(" Переменная byte a = " +a);
