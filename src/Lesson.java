@@ -10,6 +10,7 @@ public class Lesson {
         task6(); //Breakfast of the champion Task 6 завтрак чемпиона
         task7(); //Diet Program Task 7 программа диеты
         task8(); //Staff motivation Task 8 мотивация персонама
+        task9(); //Combined homework 4 Task 9 домашняя работа 4
         System.out.println("___________________________________________________________________");
     }
     public static void task0() {
@@ -118,7 +119,7 @@ public class Lesson {
     }
     public static void task1() {
         System.out.println("__________________________________________________________________");
-        System.out.println(" Домашняя работа 3");
+        System.out.println(" Домашняя работа 3 Переменные");
         System.out.println(" Задача 1");
         byte a = 127; // variable limit -128 до 127
         System.out.println(" Переменная byte a = " +a);
@@ -283,4 +284,150 @@ public class Lesson {
         float diffKristinaYear=paymentKristinaIndYear-paymentKristinaYear;
         System.out.println(" Разница в оплате Кристина в месяц = " +diffKristinaMonth+ " руб/мес. Разница в оплате за год " +diffKristinaYear+" руб/год.");
     }
+    public static void task9() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Домашняя работа 4 Условный оператор.");
+        System.out.println(" Задача 1.");//Разрешение на управление машиной вриант решения 1
+        System.out.println("_____________________________");
+        System.out.println(" Задача 1 вариант 1.");
+        byte age = 17;//the age variable is used for both solutions
+        System.out.println(" Тебе уже целых " + age + "лет.");
+        if (age >= 18) {
+            System.out.println(" Ты уже совсем взрослый тебе можно управлять автомобилем.");
+        }
+        if (age < 18) {
+            System.out.println(" Ты еще молод и тебе пока рано управлять автомобилем.");
+        }
+        System.out.println("_____________________________");
+        System.out.println(" Задача 1 вариант 2.");//Разрешение на управление машиной вриант решения 1
+        System.out.println(" Тебе уже целых " + age + "лет.");
+        if (age >= 18) {
+            System.out.println(" Ты уже совсем взрослый тебе можно управлять автомобилем.");
+        } else {
+            System.out.println(" Ты еще молод и тебе пока рано управлять автомобилем.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 2");//температура за окном пора одеть шапкку
+        float outdoorTempreatura = 4.5f;
+        System.out.println(" Сейчас температура на улице " + outdoorTempreatura + " градусов цельсия.");
+        if (outdoorTempreatura >= 5.0f) {
+            System.out.println(" Так как на улице " + outdoorTempreatura + " С. можно идти гулять без шапки.");
+            ;
+        } else {
+            System.out.println(" Так как на улице " + outdoorTempreatura + " С. необходимо одеть шапку.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 3");//Скоросной режим первышение выше 60 км.
+        byte speed = 61;
+        byte limitSpeeding = 60;//Speed limit
+        System.out.println(" Ваша текущая скорость " + speed + " км/час.");
+        if (speed <= limitSpeeding) {
+            System.out.println(" Текущая скорость автомобиля составляет " + speed + " км/час. и не преышает допустимую " + limitSpeeding + " км/час. Продолжайте движение.");
+            ;
+        } else {
+            System.out.println(" Текущая скорость автомобиля составляет " + speed + " км/час. и преышает допустимую " + limitSpeeding + " км/час. Вам необходимо снизить скорость или придется заплотить штраф.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 4 ( Обязательно в программе укажите сколько полных лет в ручную от 0 до 100)");//Где ты должен быть и что ты должен делать
+        byte howOldAreYou = 37;// Введи сколько лет
+        //от2 до 6 Детский сад;
+        // от 7 до 18 включительно ходит в школу;
+        // от 18 до 24 учится в университете;
+        // от 24 до 60 включительно ходит на работ;
+        // от 60 отдыхает;
+        System.out.println(" Ваш возраст " + howOldAreYou + " лет.");
+        boolean baby = howOldAreYou < 2;
+        boolean youGoToKindergarten = howOldAreYou >= 2 && howOldAreYou <= 6;
+        boolean youGoToSchool = howOldAreYou >= 7 && howOldAreYou <= 18;
+        boolean youGoToUniversity = howOldAreYou > 18 && howOldAreYou <= 24;
+        boolean youGoToWork = howOldAreYou > 24 && howOldAreYou <= 60;
+        boolean youPensioner = howOldAreYou > 60 && howOldAreYou <= 100;
+        if (baby) {
+            System.out.println(" Вы младенец, расслабьтесь и получайте удовольствие. ");
+        }
+        if (youGoToKindergarten) {
+            System.out.println(" Вы ребенок и должны ходить в садик. ");
+        }
+        if (youGoToSchool) {
+            System.out.println(" Вы подросток и должны ходить в школу. ");
+        }
+        ;
+        if (youGoToUniversity) {
+            System.out.println(" Вы юноша и должны ходить в университет. ");
+        }
+        if (youGoToWork) {
+            System.out.println(" Вы взрослый и должны ходить на работу. ");
+        }
+        if (youPensioner) {
+            System.out.println(" Вы являетесь пенсионером и должны отдыхать и наслаждаться жизнью, но это не точно. ");
+        }
+        ;
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 5 Ограничение на атракционы (Обязательно введите с клавиатуры возраст ребенка и наличие взрослого человека).");
+        byte howOldAreСhild = 15; // Введи сколько лет ребенку?;
+        System.out.println(" Ребенку " + howOldAreСhild + " лет. ");
+        var thereIsAdult0 = 0;// Есть ли взрослый человек "0"-нет,"1"-есть?;
+        boolean thereIsAdult = thereIsAdult0 >= 1;
+        if (thereIsAdult) {
+            System.out.println(" Взрослый есть ");
+        } else {
+            System.out.println(" Взрослых нет ");
+        }
+        ;
+        boolean theLittleOneCantRide = howOldAreСhild < 5;
+        boolean CanRideWithAdults = howOldAreСhild >= 5 && howOldAreСhild <= 14;
+        boolean canRideOnHisOwn = howOldAreСhild > 14;
+        if (theLittleOneCantRide) {
+            System.out.println(" Ребенок не может кататься на атракционах . ");
+        }
+        ;
+        if (CanRideWithAdults && thereIsAdult) {
+            System.out.println(" Ребенок не может кататься на атракционах  в сопровождении взрослого. ");
+        } else if (CanRideWithAdults) {
+            System.out.println(" Детям в этом возрасте без взрослого кататься на атракционе нельзя. ");
+        }
+        ;
+        ;
+        if (canRideOnHisOwn) {
+            System.out.println(" Ребенок может кататься на атракционах самостоятельно. ");
+        }
+        ;
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 6 Наличие свободных мест в жд вагоне.");
+        byte totalSeats = 102;// Всего мест ввагоне.
+        byte seatsForSitting = 60;// Сколько всего сидящих мест в вагоне.
+        int placesForStanding = totalSeats - seatsForSitting; // Сколько всего стоящих мест в вагоне.
+        System.out.println(" В вагоне всего " + totalSeats + " места.   ");
+        byte occupiedPlacesForSitting=60; // Сколько сидящих мест в вагоне занято.
+        byte occupiedPlacesForStanding=40; // Сколько стоящих мест в вагоне занято.
+        System.out.println(" В вагоне сидящих " + seatsForSitting + " мест. Сейчас занято " +occupiedPlacesForSitting+ " сидящих мест. ");
+        System.out.println(" В вагоне стоящих " + placesForStanding + " мест. Сейчас занято " +occupiedPlacesForStanding+ " сидящих мест. ");
+        int freePlacesForSitting=seatsForSitting-occupiedPlacesForSitting;// Свободные места для сидящих.
+        int freePlacesForStanding=placesForStanding-occupiedPlacesForStanding;// Свободные места для стоящих.
+        int freetotalSeats=freePlacesForSitting+freePlacesForStanding;// Сколько всего свободных мест осталось.
+        if (freetotalSeats>=1){
+            System.out.println(" В вагоне есть " +freetotalSeats+ " свободных места. Свободно " +freePlacesForSitting+ " места для сидящих пассажиров и вободно " +freePlacesForStanding+ " места для стоящих пассажиров. ");
+        }else { System.out.println(" В вагоне свободных мест нет. ");
+        };
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 7 Какое из чисел больше.");
+        byte a=2;
+        byte b=1;
+        byte c=3;
+        boolean writeA=a>b&&a>c;
+        boolean writeB=b>a&&b>c;
+        boolean writeC=c>a&&c>b;
+        if (writeA){System.out.println("a");
+        } else {
+            if (writeB) {
+                System.out.println("b");
+            } else {
+                if (writeC) {
+                    System.out.println("c");
+                }
+            }
+        }
+
+    }
+
 }
