@@ -488,7 +488,7 @@ public class Lesson {
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 5. Определение времени года.");//Определение времени года.;
         //Напишите номер месяца где: January-1, February-2, March-3, April-4, May-5, June-6, July-7, August-8, September-9, October-10, November-11, December-12;
-        int numberMonth=21;
+        int numberMonth=6;
         System.out.println(" Вы ввели значение "+numberMonth+ " соответствующее месяцу");
         switch (numberMonth) {
             case 12:
@@ -514,8 +514,6 @@ public class Lesson {
             default:
                 System.out.println(" Месяц которы был указан не существует и не может быть присвоен ни к одному из времен года.");
         }
-
-
 
     }
     public static void task11() {
