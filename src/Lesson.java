@@ -1,6 +1,5 @@
 public class Lesson {
     public static void main(String[] args) {
-
         task0(); //lesson 2 Task 0 домашняя работа 2
         task1(); //variable Task 1 описание переменных
         task2(); //initializing variables Task 2 инициализация переменнных
@@ -12,6 +11,7 @@ public class Lesson {
         task8(); //Staff motivation Task 8 мотивация персонама
         task9(); //Combined homework 4 Task 9 домашняя работа 4
         task10(); //Combined homework 5 Task 10 домашняя работа 5
+        task11(); //Combined homework 5 Task 10 домашняя работа 6
         System.out.println("___________________________________________________________________");
     }
     public static void task0() {
@@ -152,7 +152,6 @@ public class Lesson {
         System.out.println(" Переменная Float i1 = " +i1);
         Float i2 = 2.786f; //variable fractional
         System.out.println(" Переменная Float i2 = " +i2);
-
     }
     public static void task3() {
         System.out.println("___________________________________________________________________");
@@ -183,7 +182,6 @@ public class Lesson {
         System.out.println(" За три дня станок произвел = " +machinePerformanceThreeDays+ " шт");
         int machineProductivityPerMonth = machineProductivityOneDay*30;
         System.out.println( " За месяц станок произвел = " +machineProductivityPerMonth+ " шт");
-
     }
     public static void task5() {
         System.out.println("___________________________________________________________________");
@@ -199,7 +197,6 @@ public class Lesson {
         int  amountBrownPaint= numberСlasses*4;
         System.out.println(" Общее количество белой краски  = " +amountBrownPaint+ " банок");
         System.out.println(" В школе,где " +numberСlasses+ " , классов нужно " +amountWhitePaint+ " банок белой краски и " +amountBrownPaint+ " банок коричневой краски.");
-
     }
     public static void task6() {
         System.out.println("___________________________________________________________________");
@@ -249,7 +246,6 @@ public class Lesson {
         System.out.println(" Количество дней при потере массы 500 гр/день  " +dietReductionalf+ " дней.");
         int dietAverageReduction = 7000/((500+250)/2);
         System.out.println(" Количество дней при средней вычесленной потере массы 750 гр/день  " +dietAverageReduction+ " дней.");
-
     }
     public static void task8() {
         System.out.println("___________________________________________________________________");
@@ -386,6 +382,9 @@ public class Lesson {
         if (canRideOnHisOwn) {
             System.out.println(" Ребенок может кататься на атракционах самостоятельно. ");
         }
+        if (canRideOnHisOwn) {
+            System.out.println(" Ребенок может кататься на атракционах самостоятельно. ");
+        }
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 6 Наличие свободных мест в жд вагоне.");
         byte totalSeats = 102;// Всего мест ввагоне.
@@ -403,6 +402,7 @@ public class Lesson {
             System.out.println(" В вагоне есть " +freetotalSeats+ " свободных места. Свободно " +freePlacesForSitting+ " места для сидящих пассажиров и вободно " +freePlacesForStanding+ " места для стоящих пассажиров. ");
         }else { System.out.println(" В вагоне свободных мест нет. ");
         }
+        };
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 7 Какое из чисел больше.");
         byte a=2;
@@ -466,6 +466,18 @@ public class Lesson {
             System.out.println( " "+ year + " год был високосным.");
         }else System.out.println( " "+ year + " год был не високосным.");
         System.out.println("______________Пока думаю с учестом сотого года как не високосный и четырехсотого как високосный год._________________");
+        System.out.println(" Задача 3. Определение високосного года (Люди машины за 60 секунд угоняют в кино, я два дня думал и только такое придумал.");//Определение високосного года.;
+        int year=2000;
+        float checkingYear=year/4f;
+        float checkingYear1=year/100f;// каждый сотый год который делится без остатка в 468 строке;
+        float checkingYear2=year/400f;// каждый четырехсотый год который делится без остатка в 468 строке;
+        boolean exception=checkingYear1%1!=0||checkingYear2%1==0;
+        System.out.println(" Промежуточная переменная " + checkingYear + " при высокосном годе она кратна 4.");// Дата високосного года делится без остатка на "4";
+        System.out.println(" Промежуточная переменная " + checkingYear1 + " год кратный 100 .");// Дата не високосного года делится без остатка на "100";
+        System.out.println(" Промежуточная переменная " + checkingYear2 + " год кратный 400 .");// Дата високосного года делится без остатка на "400";
+        if (checkingYear%1==0&&exception) {
+            System.out.println( " "+ year + " год был високосным.");
+        }else System.out.println( " "+ year + " год был не високосным.");
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 4. Доставка банковской карты.");//Определение времени доставки банковской карты.;
         int distanceBankHouse=200;//Укажите какое расстояние от вашего дома до банка.;
@@ -512,8 +524,10 @@ public class Lesson {
                 System.out.println(" Месяц которы был указан не существует и не может быть присвоен ни к одному из времен года.");
         }
 
-
-
+    }
+    public static void task11() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Домашняя работа 6.");
     }
 
 }
