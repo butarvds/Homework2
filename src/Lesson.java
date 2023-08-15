@@ -1,6 +1,5 @@
 public class Lesson {
     public static void main(String[] args) {
-
         task0(); //lesson 2 Task 0 домашняя работа 2
         task1(); //variable Task 1 описание переменных
         task2(); //initializing variables Task 2 инициализация переменнных
@@ -11,6 +10,8 @@ public class Lesson {
         task7(); //Diet Program Task 7 программа диеты
         task8(); //Staff motivation Task 8 мотивация персонама
         task9(); //Combined homework 4 Task 9 домашняя работа 4
+        task10(); //Combined homework 5 Task 10 домашняя работа 5
+        task11(); //Combined homework 5 Task 10 домашняя работа 6
         System.out.println("___________________________________________________________________");
     }
     public static void task0() {
@@ -151,7 +152,6 @@ public class Lesson {
         System.out.println(" Переменная Float i1 = " +i1);
         Float i2 = 2.786f; //variable fractional
         System.out.println(" Переменная Float i2 = " +i2);
-
     }
     public static void task3() {
         System.out.println("___________________________________________________________________");
@@ -182,7 +182,6 @@ public class Lesson {
         System.out.println(" За три дня станок произвел = " +machinePerformanceThreeDays+ " шт");
         int machineProductivityPerMonth = machineProductivityOneDay*30;
         System.out.println( " За месяц станок произвел = " +machineProductivityPerMonth+ " шт");
-
     }
     public static void task5() {
         System.out.println("___________________________________________________________________");
@@ -198,7 +197,6 @@ public class Lesson {
         int  amountBrownPaint= numberСlasses*4;
         System.out.println(" Общее количество белой краски  = " +amountBrownPaint+ " банок");
         System.out.println(" В школе,где " +numberСlasses+ " , классов нужно " +amountWhitePaint+ " банок белой краски и " +amountBrownPaint+ " банок коричневой краски.");
-
     }
     public static void task6() {
         System.out.println("___________________________________________________________________");
@@ -248,7 +246,6 @@ public class Lesson {
         System.out.println(" Количество дней при потере массы 500 гр/день  " +dietReductionalf+ " дней.");
         int dietAverageReduction = 7000/((500+250)/2);
         System.out.println(" Количество дней при средней вычесленной потере массы 750 гр/день  " +dietAverageReduction+ " дней.");
-
     }
     public static void task8() {
         System.out.println("___________________________________________________________________");
@@ -351,7 +348,6 @@ public class Lesson {
         if (youGoToSchool) {
             System.out.println(" Вы подросток и должны ходить в школу. ");
         }
-        ;
         if (youGoToUniversity) {
             System.out.println(" Вы юноша и должны ходить в университет. ");
         }
@@ -361,7 +357,6 @@ public class Lesson {
         if (youPensioner) {
             System.out.println(" Вы являетесь пенсионером и должны отдыхать и наслаждаться жизнью, но это не точно. ");
         }
-        ;
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 5 Ограничение на атракционы (Обязательно введите с клавиатуры возраст ребенка и наличие взрослого человека).");
         byte howOldAreСhild = 15; // Введи сколько лет ребенку?;
@@ -373,25 +368,23 @@ public class Lesson {
         } else {
             System.out.println(" Взрослых нет ");
         }
-        ;
         boolean theLittleOneCantRide = howOldAreСhild < 5;
         boolean CanRideWithAdults = howOldAreСhild >= 5 && howOldAreСhild <= 14;
         boolean canRideOnHisOwn = howOldAreСhild > 14;
         if (theLittleOneCantRide) {
             System.out.println(" Ребенок не может кататься на атракционах . ");
         }
-        ;
         if (CanRideWithAdults && thereIsAdult) {
             System.out.println(" Ребенок не может кататься на атракционах  в сопровождении взрослого. ");
         } else if (CanRideWithAdults) {
             System.out.println(" Детям в этом возрасте без взрослого кататься на атракционе нельзя. ");
         }
-        ;
-        ;
         if (canRideOnHisOwn) {
             System.out.println(" Ребенок может кататься на атракционах самостоятельно. ");
         }
-        ;
+        if (canRideOnHisOwn) {
+            System.out.println(" Ребенок может кататься на атракционах самостоятельно. ");
+        }
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 6 Наличие свободных мест в жд вагоне.");
         byte totalSeats = 102;// Всего мест ввагоне.
@@ -408,6 +401,7 @@ public class Lesson {
         if (freetotalSeats>=1){
             System.out.println(" В вагоне есть " +freetotalSeats+ " свободных места. Свободно " +freePlacesForSitting+ " места для сидящих пассажиров и вободно " +freePlacesForStanding+ " места для стоящих пассажиров. ");
         }else { System.out.println(" В вагоне свободных мест нет. ");
+        }
         };
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 7 Какое из чисел больше.");
@@ -428,6 +422,103 @@ public class Lesson {
             }
         }
 
+    }
+
+    public static void task10() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Домашняя работа 5 комбинации условных операторов.");
+        System.out.println(" Задача 1. Мобильный банк.");//Мобильный банк;
+        //Есть ли у вас телефон? если нет то напишите "2....."
+        //Если есть то отметьте какой вид ОС у вашего телефона если "Android" то напишите "1", если "iOS" то напишите "0"
+        byte clintOs = 0;
+        if (clintOs <= 1) {
+            System.out.println(" Поздравляю вы обладатель отличного функционального гаджета который может селать вашу жизнь проще.");
+        } else
+            System.out.println(" Я рекомендую вам приобрести телефон и в полной мере пользоваться услугами наших сервисов.");
+        if (clintOs == 1) {
+            System.out.println(" Ваше устройство на базе операционной системы Android приложения для которого вы можете скачать пройдя по ссылке.");
+        }
+        if (clintOs == 0) {
+            System.out.println(" Ваше устройство на базе операционной системы IOS приложения для которого вы можете скачать пройдя по ссылке.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 2. Мобильный банк для новых и старых устройств.");//Мобильный банк, в зависимости от года выпуска устройства.;
+        //Есть ли у вас телефон? если нет то напишите "2.....".;
+        //Если есть то отметьте какой вид ОС у вашего телефона если "Android" то напишите "1", если "iOS" то напишите "0".;
+        //Укажите год выпуска вашего мобильного устройства.;
+        byte clintOs1 = 0;
+        short clintDeviceYear = 2000;
+        if (clintOs1<=1) {System.out.println(" Поздравляю вы обладатель отличного функционального гаджета который может селать вашу жизнь проще.");
+        } else System.out.println(" Я рекомендую вам приобрести телефон и в полной мере пользоваться услугами наших сервисов.");
+        if (clintOs1==1){if (clintDeviceYear>=2015) System.out.println(" Ваше устройство на базе операционной системы Android поддерживает последнюю версию мобильного приложения которое вы можете установить пройдя по ссылке.");
+            else System.out.println(" Ваше устройство на базе операционной системы Android является устаревшим и не может поддерживать последнюю версию ПО, вам необходимо установить облегченную версию ПО, которую вы можете скачать пройдя по ссылке.");
+        }
+        if (clintOs1==0){if (clintDeviceYear>=2015) System.out.println(" Ваше устройство на базе операционной системы IOS поддерживает последнюю версию мобильного приложения которое вы можете установить пройдя по ссылке.");
+        else System.out.println(" Ваше устройство на базе операционной системы IOS является устаревшим и не может поддерживать последнюю версию ПО, вам необходимо установить облегченную версию ПО, которую вы можете скачать пройдя по ссылке.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 3. Определение високосного года (Люди машины за 60 секунд угоняют в кино, я два дня думал и только такое придумал.");//Определение високосного года.;
+        int year=2000;
+        float checkingYear=year/4f;
+        float checkingYear1=year/100f;// каждый сотый год который делится без остатка в 468 строке;
+        float checkingYear2=year/400f;// каждый четырехсотый год который делится без остатка в 468 строке;
+        boolean exception=checkingYear1%1!=0||checkingYear2%1==0;
+        System.out.println(" Промежуточная переменная " + checkingYear + " при высокосном годе она кратна 4.");// Дата високосного года делится без остатка на "4";
+        System.out.println(" Промежуточная переменная " + checkingYear1 + " год кратный 100 .");// Дата не високосного года делится без остатка на "100";
+        System.out.println(" Промежуточная переменная " + checkingYear2 + " год кратный 400 .");// Дата високосного года делится без остатка на "400";
+        if (checkingYear%1==0&&exception) {
+            System.out.println( " "+ year + " год был високосным.");
+        }else System.out.println( " "+ year + " год был не високосным.");
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 4. Доставка банковской карты.");//Определение времени доставки банковской карты.;
+        int distanceBankHouse=200;//Укажите какое расстояние от вашего дома до банка.;
+        System.out.println( " От банка  до вашего дома " +distanceBankHouse+ " км. " );
+        boolean near=distanceBankHouse<=20;
+        boolean close=distanceBankHouse>20&&distanceBankHouse<=60;
+        boolean medium=distanceBankHouse>60&&distanceBankHouse<=100;
+        boolean far=distanceBankHouse>100;
+        if (near) {
+            System.out.println(" Ваш дом находится рядом с офисом банка, мы доставим вашу пластиковую карту в течениии суток.");
+        }else if (close) {
+            System.out.println(" Ваш дом находится дальше 20 километров от офиса банка, мы сможем доставить вам пластиковую карту в течениии двух суток.");
+        }else if (medium) {
+            System.out.println(" Ваш дом находится дальше 60 километров от офиса банка, мы сможем доставить вам пластиковую карту в течениии трех суток.");
+        } else if (far) { System.out.println(" К сожалению ваш дом находится слишком далеко от офиса банка и мы не сможем доставить вам пластиковую карту, вам необходимо самостоятельно забрать ее.");
+        }
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Задача 5. Определение времени года.");//Определение времени года.;
+        //Напишите номер месяца где: January-1, February-2, March-3, April-4, May-5, June-6, July-7, August-8, September-9, October-10, November-11, December-12;
+        int numberMonth=21;
+        System.out.println(" Вы ввели значение "+numberMonth+ " соответствующее месяцу");
+        switch (numberMonth) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println(" Вы указали месяц ссответствующтй сезону зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println(" Вы указали месяц ссответствующтй сезону весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println(" Вы указали месяц ссответствующтй сезону лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println(" Вы указали месяц ссответствующтй сезону осень");
+                break;
+            default:
+                System.out.println(" Месяц которы был указан не существует и не может быть присвоен ни к одному из времен года.");
+        }
+
+    }
+    public static void task11() {
+        System.out.println("___________________________________________________________________");
+        System.out.println(" Домашняя работа 6.");
     }
 
 }
