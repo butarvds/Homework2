@@ -12,7 +12,7 @@ public class Lesson {
         task8(); //Staff motivation Task 8 мотивация персонама
         task9(); //Combined homework 4 Task 9 домашняя работа 4
         task10(); //Combined homework 5 Task 10 домашняя работа 5
-        task11(); //Combined homework 5 Task 10 домашняя работа 6
+        task11(); //Combined homework 6 Task 10 домашняя работа 6
         System.out.println("___________________________________________________________________");
     }
     public static void task0() {
