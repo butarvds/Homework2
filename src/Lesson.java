@@ -11,7 +11,7 @@ public class Lesson {
         task8(); //Staff motivation Task 8 мотивация персонама
         task9(); //Combined homework 4 Task 9 домашняя работа 4
         task10(); //Combined homework 5 Task 10 домашняя работа 5
-        task11(); //Combined homework 5 Task 10 домашняя работа 6
+        task11(); //Combined homework 6 Task 11 домашняя работа 6
         System.out.println("___________________________________________________________________");
     }
     public static void task0() {
@@ -497,7 +497,7 @@ public class Lesson {
         System.out.println("___________________________________________________________________");
         System.out.println(" Задача 5. Определение времени года.");//Определение времени года.;
         //Напишите номер месяца где: January-1, February-2, March-3, April-4, May-5, June-6, July-7, August-8, September-9, October-10, November-11, December-12;
-        int numberMonth=21;
+        int numberMonth=6;
         System.out.println(" Вы ввели значение "+numberMonth+ " соответствующее месяцу");
         switch (numberMonth) {
             case 12:
